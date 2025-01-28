@@ -5,7 +5,8 @@
   "scripts": {
     "build": "npx tsc",
     "start": "npx tsc && node dist/index.js",
-    "dev": "npx ts-node src/index.ts",
+    "l": "npx ts-node leetcode/index.ts",
+    "h": "npx ts-node hackerbank/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
