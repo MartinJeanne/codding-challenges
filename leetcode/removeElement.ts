@@ -1,3 +1,4 @@
+// uses two pointers
 function removeElement(nums: number[], val: number): number {
     let k = 0; // Compteur pour les éléments non égaux à `val`
     for (let i = 0; i < nums.length; i++) {
