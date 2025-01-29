@@ -31,15 +31,15 @@ function rotate2(nums: number[], k: number): void {
 //rotate2([1, 2, 3, 4, 5, 6, 7], 8);
 
 // Seems even better, with a time complexity of O(n)
+// After checking solutions, this how people do, and mines is quite short in term of line actually
 function rotate3(nums: number[], k: number): void {
     const numsCp = [...nums];
     let position;
     for (let i = 0; i < nums.length; i++) {
-        position = i + k;
-        if (position >= nums.length) position = position % nums.length;
+        position = (i + k) % nums.length;
         nums[position] = numsCp[i];
     }
-};
+}
 
 rotate3([1, 2, 3, 4, 5, 6, 7], 8);
 //rotate3([-1, -100, 3, 99], 2);
