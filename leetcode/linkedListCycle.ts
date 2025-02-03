@@ -22,6 +22,7 @@ function hasCycle(head: ListNode | null): boolean {
     return false;
 };
 
+
 const a = new ListNode(3);
 const b = new ListNode(2);
 const c = new ListNode(0);
@@ -33,3 +34,17 @@ c.next = d;
 d.next = b;
 
 console.log(hasCycle(a));
+
+
+function hasCycle2(head: ListNode | null): boolean {
+    let slow = head;
+    let fast = head;
+    while (slow != null && fast != null && fast.next != null) {
+        slow = slow?.next;
+        fast = fast.next.next;
+        if (slow === fast) return true;
+    }
+    return false;
+};
+
+console.log(hasCycle2(a));
