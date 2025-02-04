@@ -1,4 +1,4 @@
-// TODO to finish, I found it hard
+/*
 function maxProfitII(prices: number[]): number {
     let buyIndex = 0;
     const profits = [];
@@ -21,3 +21,17 @@ function maxProfitII(prices: number[]): number {
 console.log(maxProfitII([7, 1, 5, 3, 6, 4]));
 console.log(maxProfitII([1, 2, 3, 4, 5]));
 console.log(maxProfitII([7, 6, 4, 3, 1]));
+*/
+
+// Watched a solution
+function maxProfit(prices: number[]): number {
+    let profit = 0;
+    for (let i = 1; i < prices.length; i++) {
+        if (prices[i] > prices[i - 1]) {
+            profit += prices[i] - prices[i - 1];
+        }
+    }
+    return profit;
+};
+
+console.log(maxProfit([7, 1, 5, 3, 6, 4]));
