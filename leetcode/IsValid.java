@@ -1,10 +1,9 @@
-package org.example;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+public class IsValid {
     public static boolean isValid(String s) {
         List<Character> openChar = Arrays.asList('(', '[', '{');
         List<Character> closingChar = Arrays.asList(')', ']', '}');
