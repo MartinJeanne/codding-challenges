@@ -1,2 +1,15 @@
-node_modules
-dist
+Typescript/node_modules
+Typescript/dist
+
+Java/.idea/modules.xml
+Java/.idea/jarRepositories.xml
+Java/.idea/compiler.xml
+Java/.idea/libraries/
+Java/*.iws
+Java/*.iml
+Java/*.ipr
+
+Java/target/
+Java/!.mvn/wrapper/maven-wrapper.jar
+Java/!**/src/main/**/target/
+Java/!**/src/test/**/target/
