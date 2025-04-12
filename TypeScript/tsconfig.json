@@ -11,5 +11,5 @@
     "include": [
         "hackerbank/**/*",
         "leetcode/**/*"
-    ]
+, "mySandbox/workerThread/main.js"    ]
 }
